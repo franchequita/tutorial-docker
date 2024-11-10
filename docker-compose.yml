@@ -1,0 +1,10 @@
+version: '3'
+services:
+ 
+  server2:
+    image: nginx:latest
+    container_name: server2
+    ports:
+      - "8081:80"
+    volumes:
+      - ./src/server2:/usr/share/nginx/html
